@@ -1,5 +1,5 @@
-@import "./variables.scss";
 @import "./breakpoints.scss";
+@import "./variables.scss";
 
 .register {
   width: 100vw;
@@ -12,7 +12,6 @@
   background-size: cover;
 
   &_content {
-    display: flex;
     flex-direction: column;
     gap: 15px;
     width: 40%;
@@ -21,18 +20,18 @@
     border-radius: 20px;
 
     @include lg {
-      width: 60%
+      width: 60%;
     }
 
     @include mm {
-      width: 80%
+      width: 80%;
     }
 
     &_form {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 15px;
+      gap: 35px;
 
       input {
         width: 100%;
@@ -44,8 +43,8 @@
         text-align: center;
         color: white;
 
-        input:not(:placeholder-shown):focus {
-          background: transparent; /* or background: none; */
+        &:focus {
+          background: transparent;
         }
 
         &::placeholder {
